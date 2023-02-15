@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "Shop.Application": {
+      "commandName": "Project"
+    },
+    "UI": {
+      "commandName": "Project",
+      "workingDirectory": "C:\\Users\\genya\\source\\repos\\Shop\\Shop.UI",
+      "authenticationMode": "Windows"
+    }
+  }
+}
