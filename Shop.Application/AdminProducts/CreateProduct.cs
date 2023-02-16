@@ -1,8 +1,10 @@
-﻿using Shop.Database;
-using Shop.Domain.Models;
-using Shop.UI.Pages.ViewModels;
+﻿
 
-namespace Shop.Application.CreateProducts
+using Shop.Database;
+using Shop.Domain.Models;
+using Shop.UI.Pages.AdminViewModels;
+
+namespace Shop.Application.AdminProducts
 {
     public class CreateProduct
     {
@@ -14,10 +16,11 @@ namespace Shop.Application.CreateProducts
             _context = context;
         }
 
-        public async Task Do(ProductViewModel viewModel)
+        public async Task Do(ProductAdminViewModel viewModel)
         {
             _context.Products.Add(new Product
             {
+                Id = viewModel.Id,
                 Name = viewModel.Name,
                 Description = viewModel.Description,
                 Value = viewModel.Value
